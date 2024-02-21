@@ -20,11 +20,29 @@
         }
         label{
             font-weight: bold;
+            width: 90px;
+            display: inline-block;
         }
         input{
             width: 50%;
             height: 20px;
             border-radius: 5px;
+            /* margin-left: 80px; */
+        }
+        button{
+            padding: 7px;
+            border-radius: 5px;
+            width: 100px;
+            font-weight: bold;
+            background-color: rgba(47, 155, 74, 0.164);
+            color: rgb(28, 59, 199);
+            transition: all 2s ease-in-out;
+            margin-left: 50px;
+            border: none;
+        }
+        button:hover{
+            background-color: rgb(47, 155, 74); 
+            cursor: pointer;
         }
     </style>
 </head>
@@ -41,6 +59,7 @@
         <input type="text" placeholder="User Name"><br><br>
         <label for="">Password:</label>
         <input type="password" placeholder="Password"><br><br>
+        <button>Register</button><button>Resat</button><br><br>
         New User <a href="form.html">Login Here</a>
 
     </form>

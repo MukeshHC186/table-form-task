@@ -19,23 +19,40 @@
         }
         label{
             font-weight: bold;
+            display: inline-block;
         }
         input{
             width: 50%;
             height: 20px;
             border-radius: 5px;
+            /* margin-left: 80px; */
+        }
+        button{
+            padding: 7px;
+            border-radius: 5px;
+            width: 100px;
+            font-weight: bold;
+            background-color: rgba(47, 155, 74, 0.164);
+            color: rgb(28, 59, 199);
+            transition: all 2s ease-in-out;
+            border: none;
+        }
+        button:hover{
+            background-color: rgb(47, 155, 74); 
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <form action="">
         
-        <caption class="task"><a href="">Task-02 <sup>nd</sup></a></caption><br><br>
+        <caption class="task"><a href="">Task-02 <sup>2nd</sup></a></caption><br><br>
         <a href="">Login Form</a><br><br>
         <label for="">User Name:</label>
         <input type="text" placeholder="User Name"><br><br>
         <label for="">Password:</label>
         <input type="password" placeholder="Password"><br><br>
+        <button>Login</button><br><br>
         New User <a href="registration.html">Register Here</a>
 
     </form>
