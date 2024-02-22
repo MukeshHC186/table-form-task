@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            /* border: 2px solid; */
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            position: sticky;
+            top: 0px;
+            background-color: rgba(32, 178, 171, 0.404);
+            padding: 10px;
+        }
+
+        nav img {
+            width: 50px;
+            height: 40px;
+            margin-left: 30px;
+            border-radius: 10px;
+        }
+
+        .container ul {
+            display: flex;
+            /* justify-content: space-evenly; */
+            gap: 80px;
+            list-style: none;
+            margin-right: 400px;
+            align-items: center;
+            padding-top: 10px;
+
+        }
+
+        .menu {
+            margin-right: 100px;
+            margin-top: 20px;
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+            transition: all 1s ease-in-out;
+            padding: 20px;
+        }
+
+        a:hover {
+            background-color: lightseagreen;
+        }
+
+        .container_main {
+            /* border: 2px solid salmon; */
+            margin-top: 20px;
+            width: 70%;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h2 {
+            font-size: x-large;
+        }
+
+        button {
+            padding: 3px;
+            width: 130px;
+            background-color: rgb(110, 233, 110);
+            border-radius: 5px;
+            border: none;
+            transition: all 1s ease-in-out;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        .card {
+            /* border: 2px solid blue; */
+            /* width:50%; */
+            padding: 10px;
+            height: 180px;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin-top: 15px;
+            transition: all 1s ease-in-out;
+        }
+
+        .card:hover {
+            background-color: lightseagreen;
+            transform: scale-y(1.02);
+        }
+
+        .card img {
+            width: 100px;
+
+        }
+
+        .container_main1 {
+            /* border: 2px solid black; */
+            width: 40%;
+            padding: 150px 40px;
+            line-height: 40px;
+
+        }
+
+        .container_main2 {
+            /* border: 2px solid black; */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 50%;
+            /* margin: auto; */
+            gap: 8px;
+            padding: 12px;
+
+        }
+
+
+        @media screen and (min-width:150px) and (max-width:768px) {
+            .container ul {
+                display: none;
+            }
+
+            .menu {
+                display: block;
+            }
+
+            .container_main {
+                display: block;
+width: 100%;
+            }
+
+            .container_main1 {
+                width: 96%;
+                text-align: center;
+                margin: auto;
+                padding: 0;
+                color: rgb(38, 59, 71);
+            }
+
+            .container_main2 {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                width: 96%;
+                gap: 5px;
+                padding: 0px;
+                margin: auto;
+            }
+
+            .card {
+                width: 100%;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <!-- Navbar content -->
+        <img src="./unnamed.png" alt="">
+        <div class="container">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Email</a></li>
+                <li><a href="">Help</a></li>
+            </ul>
+        </div>
+        <div class="menu">&#9776;</div>
+    </nav>
+    <div class="container_main">
+        <div class="container_main1">
+            <h2>Invest In IPOs</h2>
+            <p>Trusted By Millions of Indians. Start Investing Today</p>
+            <button>GET STARTED</button>
+        </div>
+        <div class="container_main2">
+            <div class="card">
+                <img src="./logo1.jpeg" alt="">
+                <h3>Mutul Funds</h3>
+            </div>
+            <div class="card">
+                <img src="./logo2.jpg" alt="">
+                <h3>Stocks</h3>
+            </div>
+            <div class="card">
+                <img src="./download.png" alt="">
+                <h3>Future & Options</h3>
+            </div>
+            <div class="card">
+                <img src="./logo1.jpeg" alt="">
+                <h3>US Stocks</h3>
+            </div>
+            <div class="card">
+                <img src="./bull.jpg" alt="">
+                <h3>IPOs</h3>
+            </div>
+            <div class="card">
+                <img src="./logo1.jpeg" alt="">
+                <h3>Fixed Deposits</h3>
+            </div>
+
+        </div>
+    </div>
+    <h1 style="text-align: center;margin-top: 10px;">Keep learning. Keep growing.</h1>
+    <div class="mid">
+        <div class="card1">
+            <img src="./mid1.png" alt="">
+            <h3>How to Select/Pick Stocks for Intraday</h3>
+        </div>
+    </div>
+</body>
+
+</html>
