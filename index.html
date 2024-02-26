@@ -1,10 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
     <style>
         table,
         tr,
@@ -15,12 +18,20 @@
             text-align: center;
             border-collapse: collapse;
             /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
-           
         }
-        th,td{
-            transition: all 1s ease-in-out ;
+        body{
+            background-color: rgba(32, 178, 171, 0.281);
         }
-        
+        table{
+            margin-top: 150px;
+            margin-bottom: 150px;
+        }
+
+        th,
+        td {
+            transition: all 1s ease-in-out;
+        }
+
         th:hover,
         td:hover {
             background-color: rgb(220, 226, 130);
@@ -33,38 +44,57 @@
             margin: 30px auto;
             /* border: 2px solid gainsboro; */
             text-align: center;
-            
+
         }
-     table th{
-        background-color: lightslategray;
-     }
-     table tbody :nth-child(odd){
-        background-color: rgba(119, 136, 153, 0.616);
-     }
-     table tbody :nth-child(even){
-        background-color: rgba(81, 132, 184, 0.616);
-     }
+
+        table th {
+            background-color: lightslategray;
+        }
+
+        table tbody :nth-child(odd) {
+            background-color: rgba(119, 136, 153, 0.616);
+        }
+
+        table tbody :nth-child(even) {
+            background-color: rgba(81, 132, 184, 0.616);
+        }
+
         table {
             width: 100%;
         }
 
-        caption {
+        .span {
             font-weight: bold;
             font-size: xx-large;
             /* color: rgb(41, 39, 192); */
         }
-        a{
+
+        a {
             text-decoration: none;
+            
         }
-       
     </style>
 </head>
 
 <body>
-    <div class="table">
+    <nav>
+        <!-- Navbar content -->
+        <div class="img"> <img src="./unnamed.png" alt=""></div>
 
+        <div class="container">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Email</a></li>
+                <li><a href="">Help</a></li>
+            </ul>
+        </div>
+        <div class="menu">&#9776;</div>
+    </nav>
+    <div class="table">
+        <span><a href="form.html">Task-01 <sup>st</sup></a></span>
         <table>
-            <caption><a href="form.html">Task-01 <sup>st</sup></a></caption>
+            
             <thead>
                 <tr>
                     <th>S.No.</th>
@@ -120,6 +150,38 @@
             </tbody>
         </table>
     </div>
+    <footer class="site_footer">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>About Us</h3>
+                <p>A brief description of your website or company.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row1">
+            <div class="col-md-12">
+                <p>Designed by Mukesh Kumar Jat | &copy; 2024 Your Website. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
