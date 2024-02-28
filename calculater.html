@@ -1,0 +1,156 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+ body {
+      font-family: Arial, sans-serif;
+    }
+    .calculator {
+      width: 750px;
+      background-color: rgba(32, 178, 171, 0.555);
+      border-radius: 5px;
+      padding: 10px;
+      margin: 50px auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .display {
+      font-size: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      padding: 5px;
+      text-align: right;
+      margin-bottom: 10px;
+    }
+    .button_main {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
+    }
+    .button1 {
+      padding: 10px;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      background-color: #e0e0e0;
+      border-radius: 3px;
+    }
+    .button1:hover {
+      background-color: #d0d0d0;
+    }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <!-- Navbar content -->
+        <div class="img"> <img src="./unnamed.png" alt=""></div>
+
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Email</a></li>
+                <li><a href="">Help</a></li>
+            </ul>
+        </div>
+        <div class="menu">&#9776;</div>
+    </nav>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="button_main">
+          <button class="button1" onclick="clearDisplay()">C</button>
+          <button class="button1" onclick="appendToDisplay('/')">/</button>
+          <button class="button1" onclick="appendToDisplay('*')">*</button>
+          <button class="button1" onclick="deleteLast()">DEL</button>
+          <button class="button1" onclick="appendToDisplay('7')">7</button>
+          <button class="button1" onclick="appendToDisplay('8')">8</button>
+          <button class="button1" onclick="appendToDisplay('9')">9</button>
+          <button class="button1" onclick="appendToDisplay('-')">-</button>
+          <button class="button1" onclick="appendToDisplay('4')">4</button>
+          <button class="button1" onclick="appendToDisplay('5')">5</button>
+          <button class="button1" onclick="appendToDisplay('6')">6</button>
+          <button class="button1" onclick="appendToDisplay('+')">+</button>
+          <button class="button1" onclick="appendToDisplay('1')">1</button>
+          <button class="button1" onclick="appendToDisplay('2')">2</button>
+          <button class="button1" onclick="appendToDisplay('3')">3</button>
+          <button class="button1" onclick="calculateResult()">=</button>
+          <button class="button1" onclick="appendToDisplay('0')">0</button>
+          <button class="button1" onclick="appendToDisplay('.')">.</button>
+        </div>
+      </div>
+    
+      <script>
+        function clearDisplay() {
+          document.getElementById('display').innerText = '0';
+        }
+    
+        function deleteLast() {
+          let display = document.getElementById('display');
+          display.innerText = display.innerText.slice(0, -1);
+          if (display.innerText === '') {
+            display.innerText = '0';
+          }
+        }
+    
+        function appendToDisplay(value) {
+          let display = document.getElementById('display');
+          if (display.innerText === '0' && value !== '.') {
+            display.innerText = value;
+          } else {
+            display.innerText += value;
+          }
+        }
+    
+        function calculateResult() {
+          let display = document.getElementById('display');
+          try {
+            display.innerText = eval(display.innerText);
+          } catch (error) {
+            display.innerText = 'Error';
+          }
+        }
+      </script>
+    <footer class="site_footer">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>About Us</h3>
+                <p>A brief description of your website or company.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row1">
+            <div class="col-md-12">
+                <p>Designed by Mukesh Kumar Jat | &copy; 2024 Your Website. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
