@@ -8,7 +8,7 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     position: sticky;
     top: 0px;
@@ -17,7 +17,7 @@ nav {
 }
 
 .img {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 10%;
     display: flex;
     justify-content: center;
@@ -27,11 +27,11 @@ nav {
     width: 50px;
     height: 48px;
     border-radius: 15px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .container {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 40%;
 }
 
@@ -44,7 +44,7 @@ nav {
 }
 
 .menu {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 10%;
     padding: 10px;
     text-align: center;
@@ -62,7 +62,7 @@ a:hover {
 }
 
 .container_main {
-    border: 2px solid salmon;
+    /* border: 2px solid salmon; */
     width: 90%;
     margin: 10px auto;
     padding: 20px;
@@ -89,7 +89,7 @@ button:hover {
 }
 
 .container_main1 {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 40%;
     margin: auto;
     display: grid;
@@ -101,7 +101,7 @@ button:hover {
 }
 
 .container_main2 {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 50%;
@@ -110,7 +110,7 @@ button:hover {
 }
 
 .card {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     width: 98%;
     margin: auto;
     padding: 10px;
@@ -133,14 +133,14 @@ button:hover {
 }
 
 .mid_container {
-    border: 2px solid salmon;
+    /* border: 2px solid salmon; */
     width: 90%;
     margin: 10px auto;
     text-align: center;
 }
 
 .card1 {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -166,7 +166,7 @@ button:hover {
 }
 
 .mutul_container {
-    border: 2px solid salmon;
+    /* border: 2px solid salmon; */
     width: 90%;
     margin: 10px auto;
     text-align: center;
@@ -176,7 +176,7 @@ button:hover {
 
 .mutul1 {
     width: 100%;
-    border: 2px solid rgb(58, 25, 31);
+    /* border: 2px solid rgb(58, 25, 31); */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: auto;
@@ -184,7 +184,7 @@ button:hover {
 }
 
 .mutual_card {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     width: 95%;
     margin: 15px auto;
     padding: 30px;
@@ -204,7 +204,7 @@ button:hover {
 }
 
 .last_container {
-    border: 2px solid salmon;
+    /* border: 2px solid salmon; */
     width: 90%;
     /* height: 600px; */
     margin: 10px auto;
@@ -218,14 +218,14 @@ button:hover {
 .last1 {
     width: 50%;
     /* height: 100%; */
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: grid;
     place-items: center;
 }
 
 .last2 {
     width: 30%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     margin-top: 3%;
     height: 91.5%;
 }
@@ -243,7 +243,7 @@ button:hover {
 }
 
 .site_footer {
-    border: 2px solid rgb(45, 187, 32);
+    /* border: 2px solid rgb(45, 187, 32); */
     text-align: center;
     padding: 40px;
     background-color: black;
@@ -251,7 +251,7 @@ button:hover {
 }
 
 .row {
-    border: 2px solid rgb(150, 20, 132);
+    /* border: 2px solid rgb(150, 20, 132); */
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 50px;
@@ -309,13 +309,13 @@ button:hover {
     }
 
     .card1 {
-        border: 2px solid black;
+        /* border: 2px solid black; */
         width: 100%;
         display: block;
     }
 
     .card2 {
-        border: 2px solid red;
+        /* border: 2px solid red; */
         width: 90%;
         margin: 15px auto;
     }
@@ -339,7 +339,7 @@ button:hover {
     }
 
     .mutual_card {
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
         width: 90%;
         margin: 15px auto;
 
@@ -376,7 +376,7 @@ button:hover {
     }
 
     .site_footer {
-        border: 2px solid rgb(45, 187, 32);
+        /* border: 2px solid rgb(45, 187, 32); */
         text-align: center;
         padding: 5px;
         background-color: black;
@@ -441,13 +441,13 @@ button:hover {
     }
 
     .card1 {
-        border: 2px solid black;
+        /* border: 2px solid black; */
         width: 100%;
         display: block;
     }
 
     .card2 {
-        border: 2px solid red;
+        /* border: 2px solid red; */
         width: 90%;
         margin: 15px auto;
 
@@ -472,7 +472,7 @@ button:hover {
     }
 
     .mutual_card {
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
         width: 90%;
         margin: 15px auto;
 
@@ -509,7 +509,7 @@ button:hover {
     }
 
     .site_footer {
-        border: 2px solid rgb(45, 187, 32);
+        /* border: 2px solid rgb(45, 187, 32); */
         text-align: center;
         padding: 5px;
         background-color: black;
